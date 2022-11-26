@@ -1,1 +1,2 @@
-# mypage thx
+# mypage 
+this is a practice for myself
