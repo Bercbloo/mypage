@@ -5,7 +5,8 @@ h1 {text-align:center;
         background-color:#ffabf5; 
        }
 .vissza {
-    border: none;
+    position: relative;
+    border:none;
     margin-left: 40%;
     margin-right: 40%;
     text-align: center;
@@ -13,9 +14,11 @@ h1 {text-align:center;
     background-color: rgb(202, 243, 243);
     cursor: pointer;
     border-style: outset;
+
 }
 .kep1container {
-    margin-left: 10%;
-    margin-right:30%;
+    position: fixed;
+    border: none;
+    margin-left: 26%;
+    margin-right:30%
 }
-
