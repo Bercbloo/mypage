@@ -13,15 +13,6 @@ h1 {text-align:center;
     background-color: rgb(202, 243, 243);
     cursor: pointer;
     border-style: outset;
-
-}
-.kep1container {
-    border: 3px solid black;
-    margin-left:0%;
-    margin-right:0%
-}
-.kep1 {
-    text-align:center;
 }
 .kep1container {
     border: none;
