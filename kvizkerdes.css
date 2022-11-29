@@ -1,0 +1,43 @@
+.kerdes {
+    font-family: fantasy;
+    font-size: 65px;
+    color: rgb(9, 0, 129);
+    text-align: center;
+}
+body {
+     background-color: aquamarine;
+}
+.igendiv {
+         margin-left: 10%;
+         margin-right: 10%;
+         margin-bottom: 0%;
+         
+}
+.igen {
+    font-size: 40px;
+    color:rgb(23, 90, 23);
+    background-color: rgb(62, 255, 62);
+    border: 10px solid rgb(23, 90, 23);
+    border-radius: 20%;
+    border-style: inset;
+    cursor: pointer;
+    font-family: fantasy;
+}
+.nemdiv {
+    text-align: right;
+}
+.nem {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color:rgb(128, 0, 0);
+    background-color: rgb(240, 95, 95);
+    font-family: fantasy;
+    cursor: pointer;
+    border: 10px solid rgb(128, 0, 0);
+    border-radius: 20%;
+    border-style: inset;
+    
+}
+.kep {
+    text-align: center;
+}
