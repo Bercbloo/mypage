@@ -19,6 +19,7 @@ h1 {text-align:center;
 .kep1container {
     position: static;
     border: none;
-    margin-left: 26%;
-    margin-right:30%;
+    margin-left: 0%;
+    margin-right:0%;
+    text-align:center;
 }
