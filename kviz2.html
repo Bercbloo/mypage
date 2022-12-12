@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+          
+        
+        function helyes(){
+            document.getElementById("helyes").innerHTML="Helyes válasz! Persze, hogy sikerülni fog!🥳"
+            document.getElementById("helytelen").innerHTML=""
+            document.getElementById("gomb1/1").style.backgroundColor='green'
+            document.getElementById("gomb1/2").style.backgroundColor=''
+        
+        }
+        function helytelen(){
+            document.getElementById("helytelen").innerHTML="Na errre ne is gondolj, azt tudod elérni, amit csak akarsz💪"
+            document.getElementById("helyes").innerHTML=""
+            document.getElementById("gomb1/2").style.backgroundColor='red'
+            document.getElementById("gomb1/1").style.backgroundColor=''
+        }
+        function next(){
+            document.getElementById("masodik_kerdes").innerHTML=
+            "Milyen nagy a szívem?"
+            document.getElementById("valasz_kicsi").style.display=''
+            document.getElementById("valasz_nagy").style.display=''
+            document.getElementById("gomb2").innerHTML=""
+            document.getElementById("gomb2").outerHTML=""
+            document.getElementById("valasz_kicsi").innerHTML="nagyon kicsi"
+            document.getElementById("valasz_nagy").innerHTML="nagyon nagy"
+            document.getElementById("elso").innerHTML=""
+            document.getElementById("elso").outerHTML=""
+            
+
+
+        }
+        function oyeah() {
+            document.getElementById("oyeah").innerHTML="HELYES A VÁLASZ😍"
+            document.getElementById("kabbe").innerHTML=""
+            document.getElementById("valasz_nagy").style.backgroundColor='green'
+            document.getElementById("valasz_kicsi").style.backgroundColor=''
+            
+        }
+        function kabbe() {
+            document.getElementById("kabbe").innerHTML="Hát ez nem igaz😥"
+            document.getElementById("oyeah").innerHTML=""
+            document.getElementById("valasz_kicsi").style.backgroundColor='red'
+            document.getElementById("valasz_nagy").style.backgroundColor=''
+        }
+        function next2() {
+            document.getElementById("kerdes3").style.display=''
+            document.getElementById("next2").style.display='none'
+            document.getElementById("helyes2").style.display=''
+            document.getElementById("helytelen2").style.display=''
+        }
+        function helyes2() {
+            document.getElementById("correct2").innerHTML="NA VÉGRE!"
+            document.getElementById("incorrect2").innerHTML=""
+            document.getElementById("helytelen2").style.backgroundColor=''
+            document.getElementById("helyes2").style.backgroundColor='green'
+        }
+        function helytelen2() {
+            document.getElementById("incorrect2").innerHTML="NEM NEM NEM ÉS NEM!!! Nézd meg a linket, ott a bizonyíték👇"
+            document.getElementById("correct2").innerHTML=""
+            document.getElementById("helytelen2").style.backgroundColor='red'
+            document.getElementById("helyes2").style.backgroundColor=''
+            document.getElementById("link").style.display=''
+
+        }
+      
+    </script>
+</head>
+<a title="123" href="https://www.gyakorikerdesek.hu/egyeb-kerdesek__egyeb-kerdesek__2065204-helyes-igy-hogy-kell-pisilnom-esetleg-pisilnem-vagy-csak-siman-pisilni"></a>
+<body style="background-color:rgb(166, 166, 253) ;">
+    
+    <center>
+
+<button class="kezdo" onclick="document.getElementById('egesz').style.display=''">teszt elkezdése
+
+</button>
+<hr>
+<div style="display:none ;" id="egesz">
+    <h1 style="font-size:50px;">
+   Sikerülni fog-e elvégezni az egyetemet?
+</h1>  
+<button id="gomb1/1" onclick="helyes()">
+   Igen
+</button>
+<button id="gomb1/2" onclick="helytelen()">
+    Nem
+</button>
+<h2 id="helyes"></h2>
+<h2 id="helytelen"></h2>
+
+<hr>
+<h style="font-size:50px;font-weight: bold;" id="masodik_kerdes"></h>
+    <button id="gomb2" onclick="next()">
+        következő kérdés
+    </button> <br><br><br>
+    <button style="display:none ;" onclick="kabbe()" id="valasz_kicsi">
+        
+    </button>
+    <button style="display:none ;" onclick="oyeah()" id="valasz_nagy">
+        
+    </button>
+    <h1 id="oyeah"></h1>
+    <h1 id="kabbe"></h1>
+    <hr>
+    <button id="next2" onclick="next2()">következő kérdés</button>
+    <h style="display:none;font-size: 50px;font-weight: bold;" id="kerdes3">
+        Hogyan mondjuk helyesen?
+    </h>
+    <br><br><br>
+    <button onclick="helyes2()" style="display:none ;" id="helyes2">Pisilnem</button>
+    <button onclick="helytelen2()" style="display: none;" id="helytelen2">Pisilnom</button>
+    <h1 id="correct2"></h1>
+    <h1 id="incorrect2"></h1>
+    <a id="link" title="geci" style="cursor:pointer;display: none;font-size: 100px;" href="https://www.google.com/"></a>
+
+    
+
+
+
+</div>
+
+</center>
+
+</body>
