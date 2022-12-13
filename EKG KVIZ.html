@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {
+    background-color: rgb(255, 171, 171);
+}
+.kezdogomb {
+    border:5px solid blueviolet;
+    border-style: ridge;
+    background-color: aqua;
+    cursor: pointer;
+    font-size: 40px;
+}
+.kezdogomb:hover {
+    background-color: blue;
+    color:white;
+}
+.gomb {
+    border: 3px solid blueviolet;
+    border-style: ridge;
+    background-color: aqua;
+    cursor: pointer;
+    font-size: 20px;
+}
+.gomb:hover {
+    background-color: blue;
+    color:white;
+}
+.kerdesek{
+    border: 2px solid blue;
+    width: fit-content;
+    background-color: rgb(6, 0, 181);
+    color:white;
+
+    
+}
+</style>
+<script>
+function kezdes() {
+    document.getElementById("egész").style.display=''
+    document.getElementById("kezdogomb").style.backgroundColor='green'
+    document.getElementById("kezdogomb").style.color='white'
+
+//ELSŐ KÉRDÉS SZKRIPT BLOKKJA
+
+}
+function valasz_1_igaz() {
+    document.getElementById("1.igazfeedback").innerHTML="Helyes!"
+    document.getElementById("1.hamisfeedback").innerHTML=""
+    document.getElementById("1.igaz").style.backgroundColor='green'
+    document.getElementById("1.igaz").style.color='white'
+    document.getElementById("1.hamis").style.backgroundColor=''
+    document.getElementById("1.hamis").style.color='black'
+
+}
+function valasz_1_hamis() {
+    document.getElementById("1.hamisfeedback").innerHTML="Nem, ez a jobb tawara blokkjában van"
+    document.getElementById("1.igazfeedback").innerHTML=""
+    document.getElementById("1.hamis").style.backgroundColor='red'
+    document.getElementById("1.hamis").style.color='white'
+    document.getElementById("1.igaz").style.backgroundColor=''
+    document.getElementById("1.igaz").style.color='black'
+}
+
+function kerdes_1_start() {
+    document.getElementById("kerdes_1").style.display=''
+    document.getElementById("kerdes_1_start").style.display='none'
+}
+
+//MÁSODIK KÉRDÉS SZKRIPT BLOKKJA
+
+    function valasz_2_igaz() {
+    document.getElementById("2.igazfeedback").innerHTML="Igen! 90° felett jobb deviációról beszélhetünk"
+    document.getElementById("2.hamisfeedback").innerHTML=""
+    document.getElementById("2.igaz").style.backgroundColor='green'
+    document.getElementById("2.igaz").style.color='white'
+    document.getElementById("2.hamis").style.backgroundColor=''
+    document.getElementById("2.hamis").style.color='black'
+    }
+
+function valasz_2_hamis() {
+    document.getElementById("2.hamisfeedback").innerHTML="Nem! Bal deviáció 0° alatt van, 90-0° normális, és a 90° felett jobbra deviál"
+    document.getElementById("2.igazfeedback").innerHTML=""
+    document.getElementById("2.hamis").style.backgroundColor='red'
+    document.getElementById("2.hamis").style.color='white'
+    document.getElementById("2.igaz").style.backgroundColor=''
+    document.getElementById("2.igaz").style.color='black'
+}
+function kerdes_2_start() {
+    document.getElementById("kerdes_2").style.display=''
+    document.getElementById("kerdes_2_start").style.display='none'
+}
+
+
+//HARMADIK KÉRDÉS SZKRIPT BLOKKJA   
+
+function valasz_3_igaz() {
+    document.getElementById("3.igazfeedback").innerHTML="Helyes! (II., III., aVF)"
+    document.getElementById("3.hamisfeedback").innerHTML=""
+    document.getElementById("3.igaz").style.backgroundColor='green'
+    document.getElementById("3.igaz").style.color='white'
+    document.getElementById("3.hamis").style.backgroundColor=''
+    document.getElementById("3.hamis").style.color='black'
+    }
+
+function valasz_3_hamis() {
+    document.getElementById("3.hamisfeedback").innerHTML="NEM! aVL laterális (inf: II., III., aVF)"
+    document.getElementById("3.igazfeedback").innerHTML=""
+    document.getElementById("3.hamis").style.backgroundColor='red'
+    document.getElementById("3.hamis").style.color='white'
+    document.getElementById("3.igaz").style.backgroundColor=''
+    document.getElementById("3.igaz").style.color='black'
+}
+function kerdes_3_start() {
+    document.getElementById("kerdes_3").style.display=''
+    document.getElementById("kerdes_3_start").style.display='none'
+}
+
+//NEGYEDIK KÉRDÉS SZKRIPT BLOKK
+
+function valasz_4_igaz() {
+    document.getElementById("4.igazfeedback").innerHTML="Helyes a megoldás. Ez a Wenkebach blokk"
+    document.getElementById("4.hamisfeedback").innerHTML=""
+    document.getElementById("4.igaz").style.backgroundColor='green'
+    document.getElementById("4.igaz").style.color='white'
+    document.getElementById("4.hamis").style.backgroundColor=''
+    document.getElementById("4.hamis").style.color='black'
+    }
+
+function valasz_4_hamis() {
+    document.getElementById("4.hamisfeedback").innerHTML="Nem. A PQ intervallumok a Mobitz II.-es típusban állandóak"
+    document.getElementById("4.igazfeedback").innerHTML=""
+    document.getElementById("4.hamis").style.backgroundColor='red'
+    document.getElementById("4.hamis").style.color='white'
+    document.getElementById("4.igaz").style.backgroundColor=''
+    document.getElementById("4.igaz").style.color='black'
+}
+function kerdes_4_start() {
+    document.getElementById("kerdes_4").style.display=''
+    document.getElementById("kerdes_4_start").style.display='none'
+}
+
+//5.
+
+function valasz_5_igaz() {
+    document.getElementById("5.igazfeedback").innerHTML="Igen! subepicardiálisban elevált"
+    document.getElementById("5.hamisfeedback").innerHTML=""
+    document.getElementById("5.igaz").style.backgroundColor='green'
+    document.getElementById("5.igaz").style.color='white'
+    document.getElementById("5.hamis").style.backgroundColor=''
+    document.getElementById("5.hamis").style.color='black'
+    }
+
+function valasz_5_hamis() {
+    document.getElementById("5.hamisfeedback").innerHTML="Nem! Ez az eset subepicardiálisban van"
+    document.getElementById("5.igazfeedback").innerHTML=""
+    document.getElementById("5.hamis").style.backgroundColor='red'
+    document.getElementById("5.hamis").style.color='white'
+    document.getElementById("5.igaz").style.backgroundColor=''
+    document.getElementById("5.igaz").style.color='black'
+}
+function kerdes_5_start() {
+    document.getElementById("kerdes_5").style.display=''
+    document.getElementById("kerdes_5_start").style.display='none'
+}
+//6.
+
+function valasz_6_igaz() {
+    document.getElementById("6.igazfeedback").innerHTML="Igen! A leggyakrabban nincs tünete, esetleg enyhe szívdobogásérzés"
+    document.getElementById("6.hamisfeedback").innerHTML=""
+    document.getElementById("6.igaz").style.backgroundColor='green'
+    document.getElementById("6.igaz").style.color='white'
+    document.getElementById("6.hamis").style.backgroundColor=''
+    document.getElementById("6.hamis").style.color='black'
+    }
+
+function valasz_6_hamis() {
+    document.getElementById("6.hamisfeedback").innerHTML="NEM! A kamrafibri akutan ÉLETVESZÉLYES állapot, ájulással és a keringés összeomlásával jár"
+    document.getElementById("6.igazfeedback").innerHTML=""
+    document.getElementById("6.hamis").style.backgroundColor='red'
+    document.getElementById("6.hamis").style.color='white'
+    document.getElementById("6.igaz").style.backgroundColor=''
+    document.getElementById("6.igaz").style.color='black'
+}
+function kerdes_6_start() {
+    document.getElementById("kerdes_6").style.display=''
+    document.getElementById("kerdes_6_start").style.display='none'
+}
+
+//7.
+
+function valasz_7_igaz() {
+    document.getElementById("7.igazfeedback").innerHTML="Helyes válasz"
+    document.getElementById("7.hamisfeedback").innerHTML=""
+    document.getElementById("7.igaz").style.backgroundColor='green'
+    document.getElementById("7.igaz").style.color='white'
+    document.getElementById("7.hamis").style.backgroundColor=''
+    document.getElementById("7.hamis").style.color='black'
+    }
+
+function valasz_7_hamis() {
+    document.getElementById("7.hamisfeedback").innerHTML="Nem igaz, ez a stabil angina lenne (stabil mert kevésbé veszélyes a coronaria szűkülete)"
+    document.getElementById("7.igazfeedback").innerHTML=""
+    document.getElementById("7.hamis").style.backgroundColor='red'
+    document.getElementById("7.hamis").style.color='white'
+    document.getElementById("7.igaz").style.backgroundColor=''
+    document.getElementById("7.igaz").style.color='black'
+}
+function kerdes_7_start() {
+    document.getElementById("kerdes_7").style.display=''
+    document.getElementById("kerdes_7_start").style.display='none'
+}
+
+//8.
+
+function valasz_8_igaz() {
+    document.getElementById("8.igazfeedback").innerHTML="Igen! A remegő pitvar hemodinamikai zavart nem okoz azonban a fülcsében pangó vér rögösödhet, ami a STROKE veszélyével jár"
+    document.getElementById("8.hamisfeedback").innerHTML=""
+    document.getElementById("8.igaz").style.backgroundColor='green'
+    document.getElementById("8.igaz").style.color='white'
+    document.getElementById("8.hamis").style.backgroundColor=''
+    document.getElementById("8.hamis").style.color='black'
+    }
+
+function valasz_8_hamis() {
+    document.getElementById("8.hamisfeedback").innerHTML="Nem, harmadfokú AVB esetén azonnali pacemaker terápia indokolt (a kamrákra nem jut le a sinuscsomó jele)"
+    document.getElementById("8.igazfeedback").innerHTML=""
+    document.getElementById("8.hamis").style.backgroundColor='red'
+    document.getElementById("8.hamis").style.color='white'
+    document.getElementById("8.igaz").style.backgroundColor=''
+    document.getElementById("8.igaz").style.color='black'
+}
+function kerdes_8_start() {
+    document.getElementById("kerdes_8").style.display=''
+    document.getElementById("kerdes_8_start").style.display='none'
+}
+
+//9.
+
+function valasz_9_igaz() {
+    document.getElementById("9.igazfeedback").innerHTML="Igen! Minden átmegy csak lassabban"
+    document.getElementById("9.hamisfeedback").innerHTML=""
+    document.getElementById("9.igaz").style.backgroundColor='green'
+    document.getElementById("9.igaz").style.color='white'
+    document.getElementById("9.hamis").style.backgroundColor=''
+    document.getElementById("9.hamis").style.color='black'
+    }
+
+function valasz_9_hamis() {
+    document.getElementById("9.hamisfeedback").innerHTML="NEM! I. fokú AVB-ban minden ingerület átmegy, csak lassabban"
+    document.getElementById("9.igazfeedback").innerHTML=""
+    document.getElementById("9.hamis").style.backgroundColor='red'
+    document.getElementById("9.hamis").style.color='white'
+    document.getElementById("9.igaz").style.backgroundColor=''
+    document.getElementById("9.igaz").style.color='black'
+}
+function kerdes_9_start() {
+    document.getElementById("kerdes_9").style.display=''
+    document.getElementById("kerdes_9_start").style.display='none'
+}
+
+//10.
+
+function valasz_10_igaz() {
+    document.getElementById("10.igazfeedback").innerHTML="Igen! ezek az inferior elvezetések"
+    document.getElementById("10.hamisfeedback").innerHTML=""
+    document.getElementById("10.igaz").style.backgroundColor='green'
+    document.getElementById("10.igaz").style.color='white'
+    document.getElementById("10.hamis").style.backgroundColor=''
+    document.getElementById("10.hamis").style.color='black'
+    }
+
+function valasz_10_hamis() {
+    document.getElementById("10.hamisfeedback").innerHTML="NEM! Laterális infarctus esetén a laterális (I., aVL, V5, V6-ban látunk ST-elevációt)"
+    document.getElementById("10.igazfeedback").innerHTML=""
+    document.getElementById("10.hamis").style.backgroundColor='red'
+    document.getElementById("10.hamis").style.color='white'
+    document.getElementById("10.igaz").style.backgroundColor=''
+    document.getElementById("10.igaz").style.color='black'
+}
+function kerdes_10_start() {
+    document.getElementById("kerdes_10").style.display=''
+    document.getElementById("kerdes_10_start").style.display='none'
+}
+
+</script>
+<body>
+<center>
+    <h1 style="border: 10px solid blueviolet;background-color: rgb(20, 0, 100);
+    font-size: 100px;width: 50%;color:white;border-style: ridge;margin-top: 0;"><i>EKG teszt</i></h1>
+<button class="kezdogomb" id="kezdogomb" onclick="kezdes()">👉Kezdés👈</button>
+<div class="egész" id="egész" style="display: none;">
+<hr>
+<!--ELSŐ KÉRDÉS BLOKKJA-->
+
+
+<button class="gomb" id="kerdes_1_start" onclick="kerdes_1_start()">1. kérdés</button>
+<div id="kerdes_1" style="display: none;">  
+<h1 class="kerdesek">
+
+    1. <ins>Bal tawara szár</ins> blokkban V1-ben rSr' (ereservessző) morfológia látható
+
+</h1>
+<!-------------------IGAZ------------------------>
+<button class="gomb" id="1.igaz" onclick="valasz_1_igaz()">
+
+    Hamis
+<!-------------------HAMIS----------------------->
+</button>
+<button class="gomb" id="1.hamis" onclick="valasz_1_hamis()"> 
+
+    Igaz 
+
+</button>
+<h1 id="1.igazfeedback"></h1>
+<h1 id="1.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--MÁSODIK KÉRDÉS BLOKKJA-->
+
+
+<button class="gomb" id="kerdes_2_start" onclick="kerdes_2_start()">2. kérdés</button>
+<div id="kerdes_2" style="display: none;"> 
+<h1 class="kerdesek">
+
+  2. 110°-ot számolunk, tengelyállásnak, ez:
+
+</h1>
+
+<!-------------------HAMIS----------------------->
+<button class="gomb" id="2.hamis" onclick="valasz_2_hamis()"> 
+
+    Bal deviáció  
+
+</button>
+<!-------------------IGAZ------------------------>
+<button class="gomb" id="2.igaz" onclick="valasz_2_igaz()">
+
+    Jobb deviáció   
+
+</button>
+<h1 id="2.igazfeedback"></h1>
+<h1 id="2.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+<!--HARMADIK KÉRDÉS BLOKKJA-->
+
+
+<button class="gomb" id="kerdes_3_start" onclick="kerdes_3_start()">3. kérdés</button>
+<div id="kerdes_3" style="display: none;"> 
+<h1 class="kerdesek">
+
+   3. Melyik inferior elvezetés?
+
+</h1>
+<!-------------------IGAZ------------------------>
+<button class="gomb" id="3.igaz" onclick="valasz_3_igaz()">
+
+    II.   
+
+</button>
+<!-------------------HAMIS----------------------->
+<button class="gomb" id="3.hamis" onclick="valasz_3_hamis()"> 
+
+    aVL  
+
+</button>
+<h1 id="3.igazfeedback"></h1>
+<h1 id="3.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--NEGYEDIK KÉRDÉS BLOKKJA-->
+
+<button class="gomb" id="kerdes_4_start" onclick="kerdes_4_start()">4.kérdés</button>
+<div id="kerdes_4" style="display: none;"> 
+<h1 class="kerdesek">
+
+   4. Másodfokú, <ins>Mobitz I.</ins> AV blokkban a PQ intervallumok 
+
+</h1>
+
+<button class="gomb" id="4.igaz" onclick="valasz_4_igaz()">
+
+    Rövidülnek   
+
+</button>
+
+<button class="gomb" id="4.hamis" onclick="valasz_4_hamis()"> 
+
+    Állandóak 
+
+</button>
+<h1 id="4.igazfeedback"></h1>
+<h1 id="4.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--5.-->
+
+<button class="gomb" id="kerdes_5_start" onclick="kerdes_5_start()">5.kérdés</button>
+<div id="kerdes_5" style="display: none;"> 
+<h1 class="kerdesek">
+
+   5. Sub<ins>endo</ins>cardiális infraktusban az ST-szakasz
+
+</h1>
+<button class="gomb" id="5.hamis" onclick="valasz_5_hamis()"> 
+
+    Elevált  
+
+</button>
+
+<button class="gomb" id="5.igaz" onclick="valasz_5_igaz()">
+
+    Depresszált   
+
+</button>
+<h1 id="5.igazfeedback"></h1>
+<h1 id="5.hamisfeedback"></h1>
+
+
+</div>
+<br>
+<hr>
+
+<!--6.-->
+
+<button class="gomb" id="kerdes_6_start" onclick="kerdes_6_start()">6.kérdés</button>
+<div id="kerdes_6" style="display: none;"> 
+<h1 class="kerdesek">
+
+   6. Melyik lehet teljesen tünetmentes?
+
+</h1>
+
+<button class="gomb" id="6.igaz" onclick="valasz_6_igaz()">
+
+    Pitvar fibrilláció   
+
+</button>
+
+<button class="gomb" id="6.hamis" onclick="valasz_6_hamis()"> 
+
+    Kamra fibrilláció  
+
+</button>
+<h1 id="6.igazfeedback"></h1>
+<h1 id="6.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--7.-->
+<button class="gomb" id="kerdes_7_start" onclick="kerdes_7_start()">7.kérdés</button>
+<div id="kerdes_7" style="display: none;"> 
+<h1 class="kerdesek">
+
+  7. <ins>Instabil</ins> angina definíció szerint:
+
+</h1>
+<button class="gomb" id="7.hamis" onclick="valasz_7_hamis()"> 
+
+    Mellkasi fájdalom mely csak megterheléskor jelentkezik  
+
+</button>
+
+<button class="gomb" id="7.igaz" onclick="valasz_7_igaz()">
+
+    Mellkasi fájdalom mely akkor is fellép, mikor a beteg nem végez fizikia munkát   
+
+</button>
+
+
+<h1 id="7.igazfeedback"></h1>
+<h1 id="7.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--8.-->
+
+<button class="gomb" id="kerdes_8_start" onclick="kerdes_8_start()">8.kérdés</button>
+<div id="kerdes_8" style="display: none;"> 
+<h1 class="kerdesek">
+
+   8. Melyik az a szívbetegség melyben az antikoaguláns terápia elégséges?
+
+</h1>
+
+<button class="gomb" id="8.igaz" onclick="valasz_8_igaz()">
+
+    Pitvarfibrilláció   
+
+</button>
+
+<button class="gomb" id="8.hamis" onclick="valasz_8_hamis()"> 
+
+    Harmadfokú AV blokk  
+
+</button>
+<h1 id="8.igazfeedback"></h1>
+<h1 id="8.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--9.-->
+
+<button class="gomb" id="kerdes_9_start" onclick="kerdes_9_start()">9.kérdés</button>
+<div id="kerdes_9" style="display: none;"> 
+<h1 class="kerdesek">
+
+   9. Elsőfokú AV blokkban van olyan ingerület, ami nem megy át a kamrákra
+
+</h1>
+<button class="gomb" id="9.hamis" onclick="valasz_9_hamis()"> 
+
+    Igaz 
+
+</button>
+<button class="gomb" id="9.igaz" onclick="valasz_9_igaz()">
+
+    Hamis   
+
+</button>
+
+
+<h1 id="9.igazfeedback"></h1>
+<h1 id="9.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+<!--10.-->
+
+<button class="gomb" id="kerdes_10_start" onclick="kerdes_10_start()">10.kérdés</button>
+<div id="kerdes_10" style="display: none;"> 
+<h1 class="kerdesek">
+
+   10. ST-elevációt látunk II., III., aVF-ben. A szív melyik fala érintett? 
+
+</h1>
+
+<button class="gomb" id="10.igaz" onclick="valasz_10_igaz()">
+
+    Inferior   
+
+</button>
+
+<button class="gomb" id="10.hamis" onclick="valasz_10_hamis()"> 
+
+    Laterális  
+
+</button>
+<h1 id="10.igazfeedback"></h1>
+<h1 id="10.hamisfeedback"></h1>
+</div>
+<br>
+<hr>
+
+</div>
+<br><br><hr>
+<img src="C:\Users\Bakán Bertalan\OneDrive - Semmelweis Egyetem\Asztal\WEBLAP forráskódok\belso\worksapce\ekg.jpg" alt="">
+</center>
+</body>
+</html>
