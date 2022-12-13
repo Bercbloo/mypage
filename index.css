@@ -127,3 +127,33 @@ p2 {color:rgb(73, 171, 73);
     margin-left:5%;
     
 }
+li a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0%;
+    background-color: #eb0aff;
+    border: 4px solid  rgb(164, 0, 169) ;
+    border-radius: 5%;
+    width: fit-content;
+    text-align: center;
+    
+}
+li {
+    display: inline;
+    padding: 8px 20px;
+    font-size: 30px;
+    border-right: 4px solid rgb(164, 0, 169);
+}
+li:last-child {
+    border-right: none;
+}
+li a:hover {
+    color: #91eeff;
+}
+.cim {
+    color: rgb(35, 255, 255);
+}
+
