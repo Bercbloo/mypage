@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(-45deg, #edfe00, #04ffbc, #00a4aa, #e900fe);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+   
+}
+.kezdo {
+    border: 5px solid rgb(133, 0, 138);
+    border-style:groove;
+    font-weight: bold;
+    font-size:50px;
+    background-color: #68fffa;
+    font-family: Tahoma;
+    cursor:pointer;
+}
+.kezdo:hover {
+    color: azure;
+    background-color: #e900fe;
+}
+.osszesgomb:hover {
+        color: azure;
+        background-color: #e900fe;
+    }
+
+.osszesgomb {
+    border: 5px solid rgb(133, 0, 138);
+    border-style:groove;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #68fffa;
+    font-family: Tahoma;
+    cursor:pointer;
+
+}
+.helyeslink {
+    border: 3px solid rgb(133, 0, 138);
+    background-color:  #68fffa ;
+}
+.helyeslink:hover {
+    color: azure;
+    background-color: #e900fe;
+}
+.vissza {
+    border:3px solid rgb(133, 0, 138);
+    background-color:  #68fffa ;
+    width: fit-content;
+    text-decoration: none;
+}
+.vissza:hover {
+   border:5px solid rgb(133, 0, 138);
+}
